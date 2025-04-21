@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'mvn exec:java_Dexec.mainClass="com.example.App"'
+                sh 'java -jar FirstMavenApp-1.0-SNAPSHOT.jar'
             }
         }
 
